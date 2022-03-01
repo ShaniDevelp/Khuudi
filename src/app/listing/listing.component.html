@@ -1,0 +1,99 @@
+<div  fxLayout="column" class="container"  >
+
+    <div fxLayout="row" fxFlex="100"  fxLayoutAlign="space-between center">
+
+        <h1 >Logo</h1>
+        <nav fxLayout="row" >
+            <ul fxLayout="row" class="navbar-nav" fxLayoutAlign="space-between">
+                <li *ngFor="let m of navigation"  class="nav-item" >
+                    <a class="nav-link" >{{m.title}}</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+
+    <div fxLayout="column" >
+        <div class="main_heading" >
+            <h1>Listings of Islamabad</h1>
+        </div>
+
+        <div class="main_listing" fxLayout="column"  >
+            <mat-card class="example-card" fxLayout="row" *ngFor="let card of newhouseCards"  >
+                <div>
+                    <img  class="house_images" src="../../assets/img/istockphoto-458324715-612x612.jpg" alt="">
+                </div>
+                <mat-card-content fxLayout="column" class="content" >
+                  <div class="title">
+                      <h1>{{card.title}}</h1>
+                  </div>
+                  <div class="price" >
+                      <h1>PKR.{{card.price}}</h1>
+                  </div>
+                  <div class="location" fxLayout="row">
+                      <h4>{{card.location}}</h4>
+                  </div>
+                  <div class="features" fxLayout="row" >
+                      <div class="bedrooms" fxLayout="row" >
+                        <img class="bedroom_image" src="../../assets/img/double-bed.png" alt="">
+                        <h3>{{card.rooms}} bedrooms</h3>
+                      </div>
+                      <div class="bathrooms" fxLayout="row" >
+                        <img class="bathroom_image" src="../../assets/img/bathroom.png" alt="">
+                        <h3>{{card.washrooms}} washroom</h3>
+                      </div>
+                  </div>
+                  <div class="description" >
+                    {{card.description}}
+                  </div>
+                  <button class="btn btn-warning" (click)="onToggle()">
+                    {{isClicked ? '+92 346-1549273' : 'Contact For Owner details'}}
+                    </button>
+                </mat-card-content>
+            </mat-card>
+            <div class="paginator">
+                <mat-paginator [length]="houseCards.length" [pageSize]="2"  [pageSizeOptions]="[2,4]" aria-label="Select page" (page)='onPageChange($event)' ></mat-paginator>
+            </div>
+        </div>
+
+        <div class="carousel" >
+
+            
+           
+        </div>
+
+
+
+    </div>
+
+    <div fxLayout="column" class="footer" >
+        <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-between center" >
+            <h2 class="footer-logo" >Logo copyright @-2022</h2>
+            <div class="footer-icons"  fxLayout="row" fxLayoutAlign="space-between" >
+                <h3>Keep In touch</h3>
+                <img class="footer_icon_image" src="../../assets/img/facebook.png" alt="">
+                <img class="footer_icon_image"   src="../../assets/img/instagram.png" alt="">
+                <img class="footer_icon_image"  src="../../assets/img/twitter.png" alt="">
+            </div>
+        </div>
+        <div fxLayout="row" fxFlex="100" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque adipisci iste labore ratione 
+            dicta iure molestias praesentium omnis,cupiditate voluptatem, placeat delectus laborum commodi ipsa minima
+            veritatis suscipit obcaecati tempora!
+        </div>
+    </div>
+
+</div>
+
+<!-- [ngStyle]="{'height': '290px', 'width': '270px'}" -->
+
+<!-- <mdb-carousel [controls]="true"   >
+    <mdb-carousel-item  *ngFor="let slide of card.images" >
+      <img
+        src="{{slide.image}}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </mdb-carousel-item> -->
+    
+<!-- </mdb-carousel> -->

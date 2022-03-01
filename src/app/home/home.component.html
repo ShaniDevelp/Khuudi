@@ -1,0 +1,92 @@
+<div fxLayout="column" class="container"   >
+    <div fxLayout="row" fxFlex="100"  fxLayoutAlign="space-between center">
+
+        <h1 >Logo</h1>
+        <nav fxLayout="row" >
+            <button class="btn btn-primary" (click)="onBtnClick()" >List your Property</button>
+            <ul fxLayout="row" class="navbar-nav" fxLayoutAlign="space-between">
+                <li *ngFor="let m of navigation"  class="nav-item" >
+                    <a class="nav-link" >{{m.title}}</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+
+
+    <div fxLayout="row" fxFlex="100" class="header" >
+        <div id="backgroundImg">
+            <h2 class="tagLine" >
+                Looking to buy a house/flat or on a rent find the genuine owners <br>
+                without any broker 100% free
+            </h2>
+            <div class="card" fxLayout="column">
+                <h2 style="text-align: center; color: black;">How it Works</h2>
+                <div  fxLayout="row" fxLayout.xs="column" >
+                    <div class="process" fxLayout="column" *ngFor="let item of process" >
+                        <div fxLayout="row wrap" >
+                            <p class="serNo" >{{item.sno}}</p>
+                            <h3 class="title" >{{item.title}}</h3>
+                        </div>
+                        <div class="icon" >
+                            <img class="ico-img" src="{{item.icon}}" alt="">
+                        </div>
+                        <p class="description" >
+                            {{item.description}}
+                        </p>
+                        
+                    </div>
+                </div>
+                <h1 style="text-align: center; color: red;" >
+                    <span class="text-span">Call to get Details: </span> (+92) 346-1549273
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div  class="listing" >
+        <div class="top-heading">
+           <h1>Find your home</h1>
+        </div>
+
+        <div class="cards" fxLayout="row" fxLayoutGap="20px" fxLayout.xs="column" fxLayoutAlign="space-between center" >
+            <mat-card class="example-card" *ngFor="let card of cards" (click)="onClick(card.url)"  >
+                <img mat-card-image src="{{card.img}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{card.content}}
+                  </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+
+    <div fxLayout="column" class="footer" >
+        <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-between center" >
+            <h2 class="footer-logo" >Logo copyright @-2022</h2>
+            <div class="footer-icons"  fxLayout="row" fxLayoutAlign="space-between" >
+                <h3>Keep In touch</h3>
+                <img class="footer_icon_image" src="../../assets/img/facebook.png" alt="">
+                <img class="footer_icon_image"   src="../../assets/img/instagram.png" alt="">
+                <img class="footer_icon_image"  src="../../assets/img/twitter.png" alt="">
+            </div>
+        </div>
+        <div fxLayout="row" fxFlex="100" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque adipisci iste labore ratione 
+            dicta iure molestias praesentium omnis,cupiditate voluptatem, placeat delectus laborum commodi ipsa minima
+            veritatis suscipit obcaecati tempora!
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
