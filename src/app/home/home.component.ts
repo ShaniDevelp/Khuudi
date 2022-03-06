@@ -42,6 +42,5 @@ export class HomeComponent implements OnInit {
     const dialogRef = this.dialog.open(NewListingComponent, config);
 
   }
-
 }
 

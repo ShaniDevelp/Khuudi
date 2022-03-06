@@ -1,11 +1,11 @@
 <div fxLayout="column" class="container"   >
     <div fxLayout="row" fxFlex="100"  fxLayoutAlign="space-between center">
 
-        <h1 >Logo</h1>
+        <img class="logo" src="../../assets/img/logo.jpeg" alt="">
         <nav fxLayout="row" >
             <button class="btn btn-primary" (click)="onBtnClick()" >List your Property</button>
-            <ul fxLayout="row" class="navbar-nav" fxLayoutAlign="space-between">
-                <li *ngFor="let m of navigation"  class="nav-item" >
+            <ul fxLayout="row" class="navbar-nav nav_items" fxLayoutAlign="space-between">
+                <li *ngFor="let m of navigation"  class="nav-item nav_items" >
                     <a class="nav-link" >{{m.title}}</a>
                 </li>
             </ul>
@@ -17,9 +17,11 @@
     <div fxLayout="row" fxFlex="100" class="header" >
         <div id="backgroundImg">
             <h2 class="tagLine" >
-                Looking to buy a house/flat or on a rent find the genuine owners <br>
-                without any broker 100% free
+                A Platform where any Home/Apartment Owner or Renter can find each other without any Broker 100% free.
+                
             </h2>
+            <button class="btn btn-primary header_btn">
+               <a href=""></a> For More info click below</button>
             <div class="card" fxLayout="column">
                 <h2 style="text-align: center; color: black;">How it Works</h2>
                 <div  fxLayout="row" fxLayout.xs="column" >
@@ -34,7 +36,6 @@
                         <p class="description" >
                             {{item.description}}
                         </p>
-                        
                     </div>
                 </div>
                 <h1 style="text-align: center; color: red;" >

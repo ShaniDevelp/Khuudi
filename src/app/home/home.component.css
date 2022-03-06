@@ -4,6 +4,11 @@
     padding: 0 1rem;
 }
 
+.logo{
+    height: 6rem;
+    width: 6rem;
+}
+
 #backgroundImg{
     background-image: url('/assets/img/pexels-eziz-charyyev-1475938.jpg');
     background-repeat: no-repeat;
@@ -15,10 +20,16 @@
     border-bottom: 20rem;
 }
 
+.header_btn{
+    position: absolute;
+    top: 16rem;
+    left: 36rem;
+}
+
 .tagLine{
     position: absolute;
-    top: 10rem;
-    left: 13rem;
+    top: 5rem;
+    left: 6rem;
     color: black;
     text-align: center;
     font-weight: bolder;
@@ -46,8 +57,8 @@
 
     .card{
         position: absolute;
-        top: 35rem;
-        left: 2rem;
+        top: 37rem;
+        left: 1rem;
         width: 20rem;
         height: 55rem;
     }
@@ -65,6 +76,12 @@
     }
     .cards{
         margin-top: 0rem
+    }
+    .header_btn{
+        display: none;
+    }
+    .nav_items{
+        display: none;
     }
         
 
