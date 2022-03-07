@@ -14,7 +14,7 @@
 }
 
 .example-card {
-    max-width: 700px;
+    max-width: 652px;
     margin-bottom: 20px;
     min-height: 250px;
 }
@@ -114,3 +114,22 @@
         margin-top: 2rem;
     }
 } 
+
+@media only screen and (max-width: 320px) {
+    .nav-item{
+        padding: 0 0.4rem;
+    }
+
+    .footer-icons > * {
+        padding: 0.5rem;
+    }
+
+    .footer_icon_image{
+        width: 48px;
+        height: 50px;
+    }
+
+    .footer_icon_heading{
+        display: none;
+    }
+}
