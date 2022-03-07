@@ -2,7 +2,7 @@
 
     <div fxLayout="row" fxFlex="100"  fxLayoutAlign="space-between center">
 
-        <h1 >Logo</h1>
+        <img class="logo" src="../../assets/img/logo.jpeg" alt="">
         <nav fxLayout="row" >
             <ul fxLayout="row" class="navbar-nav" fxLayoutAlign="space-between">
                 <li *ngFor="let m of navigation"  class="nav-item" >
@@ -19,7 +19,7 @@
         </div>
 
         <div class="main_listing" fxLayout="column"  >
-            <mat-card class="example-card" fxLayout="row" *ngFor="let card of newhouseCards"  >
+            <mat-card class="example-card" fxLayout="row"  fxLayout.xs="column"  *ngFor="let card of newhouseCards"  >
                 <div>
                     <img  class="house_images" src="../../assets/img/istockphoto-458324715-612x612.jpg" alt="">
                 </div>
