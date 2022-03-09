@@ -105,13 +105,26 @@
     height: 70px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
     .house_images{
         height: 290px;
         width: 362px;
     }
     .content{
         margin-top: 2rem;
+    }
+
+    .footer-icons > * {
+        padding: 0.5rem;
+    }
+
+    .footer_icon_image{
+        width: 48px;
+        height: 50px;
+    }
+
+    .footer_icon_heading{
+        display: none;
     }
 } 
 

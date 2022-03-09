@@ -146,7 +146,7 @@ background-size: cover;
         position: absolute;
         top: 37rem;
         left: 1rem;
-        width: 20rem;
+        width: 23rem;
         height: 55rem;
     }
 
@@ -172,7 +172,16 @@ background-size: cover;
     }
 
     .footer_icons > * {
-        padding: 0
+        padding: 14px;
+    }
+
+    .footer_icon_image{
+        width: 61px;
+        height: 78px;
+    }
+
+    .footer_icon_heading{
+        display: none;
     }
 }
 
@@ -202,4 +211,38 @@ background-size: cover;
     .footer_icon_heading{
         display: none;
     }
+}
+
+@media only screen and (max-width: 375px) {
+    .card{
+        position: absolute;
+        top: 37rem;
+        left: 1.2rem;
+        width: 19.6rem;
+        height: 58rem;
+    }
+
+    .top-heading h1 {
+        margin-top: 23rem;
+    }
+    .cards{
+        margin-top: 4rem
+    }
+
+    /* .top-heading h1 {
+        line-height: 4rem;
+    }
+
+    .footer_icons > * {
+        padding: 4px;
+    }
+
+    .footer_icon_image{
+        width: 34px;
+        height: 30px;
+    }
+
+    .footer_icon_heading{
+        display: none;
+    } */
 }
