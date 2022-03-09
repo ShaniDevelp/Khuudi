@@ -134,6 +134,24 @@ background-size: cover;
     height: 70px;
 }
 
+@media only screen and (max-width: 1400px) {
+    .card{
+        position: absolute;
+        top: 30rem;
+        left: 8rem;
+        height: 25rem;
+        width: 57rem;
+        box-shadow: black;
+    }
+
+    .top-heading h1 {
+        margin-top: 23rem;
+    }
+    .cards{
+        margin-top: 4rem
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .tagLine{
         position: absolute;
