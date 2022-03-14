@@ -53,9 +53,9 @@ export const HOUSECARDS: HouseCards[] = [
 ]
 
 export const PROCESS: Process[] = [
-    {sno: '1', title: "Select Your House/Flat", icon: '../../assets/img/house.png', description: 'Choose from a wide range of houses in Islamabad/Rawalpindi'},
-    {sno: '2', title: "Call Us for Details", icon: '../../assets/img/call.png', description: 'Call Us to get the home Owner Contact Information'},
-    {sno: '3', title: "Find the Home", icon: '../../assets/img/deal.png', description: 'Make the meeting done without any brokerage fee'}
+    {sno: '1', title: "Select Your Apartment/Flat", icon: '../../assets/img/house.png', description: 'Choose from a wide range of Apartments/Flats in Islamabad/Rawalpindi'},
+    {sno: '2', title: "Call Us for Details", icon: '../../assets/img/call.png', description: 'Call Us to get the Owner Contact Information'},
+    {sno: '3', title: "Find your Place", icon: '../../assets/img/deal.png', description: 'Find your Favourite Place without any brokerage fees'}
 ]
 
 export const CARDS: Card[] = [
