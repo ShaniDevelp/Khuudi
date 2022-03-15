@@ -159,11 +159,22 @@ background-size: cover;
 }
 
 @media only screen and (max-width: 550px) {
-    .tagLine{
+
+    #backgroundImg .transbox{
+        background-color: #ffffff;
+        opacity: 0.6;
+        height: 84vh;
         position: absolute;
-        top: 10rem;
-        left: 1rem;
-        color: bisque;
+        top: 0rem;
+        left: 0rem;
+    }
+
+   .tagLine{
+        font-weight: bold;
+        color: #000000;
+        position: relative;
+        top: 9rem;
+        left: 0rem;
     }
 
     .card{
@@ -184,6 +195,8 @@ background-size: cover;
     }
     .top-heading h1 {
         margin-top: 22rem;
+        margin-left: 1rem;
+        line-height: 54px;
     }
     .cards{
         margin-top: 0rem
@@ -248,6 +261,7 @@ background-size: cover;
 
     .top-heading h1 {
         margin-top: 23rem;
+        line-height: 4rem;
     }
     .cards{
         margin-top: 4rem
