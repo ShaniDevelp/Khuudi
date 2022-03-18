@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HOUSECARDS, HouseCards, Menu } from '../models';
+import { ISLAMABADHOUSECARDS, HouseCards, Menu } from '../models';
 import { Navigation } from '../navigation';
 
 @Component({
@@ -23,12 +23,10 @@ export class ListingComponent implements OnInit {
 
   constructor() { 
     this.navigation = Navigation.menu
-    this.houseCards = HOUSECARDS
-    this.limit = 3
+    this.houseCards = ISLAMABADHOUSECARDS
+    this.limit = 5
 		this.oFFSet = 0
     this.isClicked = false;
-
-    console.log(this.houseCards[0].images[0].image)
    }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HOUSECARDS, HouseCards, Menu } from '../models';
+import { GULBERGHOUSECARDS, HouseCards, Menu } from '../models';
 import { Navigation } from '../navigation';
 
 @Component({
@@ -14,9 +14,9 @@ export class RawalpindiListingComponent implements OnInit {
   houseCards: HouseCards[]
   newhouseCards: HouseCards[]
 
-  interval: number
-  proportion: number
-  slidess: number
+  interval: number;
+  proportion: number;
+  slidess: number;
   limit: number;
   oFFSet: number;
   isClicked: boolean;
@@ -24,7 +24,7 @@ export class RawalpindiListingComponent implements OnInit {
 
   constructor() { 
     this.navigation = Navigation.menu;
-    this.houseCards = HOUSECARDS;
+    this.houseCards = GULBERGHOUSECARDS;
     this.limit = 3;
 		this.oFFSet = 0;
     this.isClicked = false;
@@ -37,6 +37,11 @@ export class RawalpindiListingComponent implements OnInit {
       if(idx < this.limit) return val
       return null
     })
+    for (let index = 0; index < this.newhouseCards.length; index++) {
+          console.log(this.houseCards[0].images);
+          
+    }
+
   }
 
   onPageChange(ev: any){
