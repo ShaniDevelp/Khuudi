@@ -2,7 +2,7 @@
 
     <div fxLayout="row" fxFlex="100"  fxLayoutAlign="space-between center">
 
-        <img class="logo" src="../../assets/img/logo.png" alt="">
+        <img class="logo" src="../../assets/img/logo3.png" alt="">
         <nav fxLayout="row" >
             <ul fxLayout="row" class="navbar-nav" fxLayoutAlign="space-between">
                 <li *ngFor="let m of navigation"  class="nav-item" >
@@ -52,7 +52,7 @@
                 </mat-card-content>
             </mat-card>
             <div class="paginator">
-                <mat-paginator [length]="houseCards.length" [pageSize]="3"  [pageSizeOptions]="[5, 10]" aria-label="Select page" (page)='onPageChange($event)' ></mat-paginator>
+                <mat-paginator [length]="houseCards.length" [pageSize]="5"  [pageSizeOptions]="[5, 10]" aria-label="Select page" (page)='onPageChange($event)' ></mat-paginator>
             </div>
         </div>
 
@@ -68,7 +68,7 @@
 
     <div fxLayout="column" class="footer" >
         <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-between center" >
-            <h2 class="footer-logo" >@Copyright 2022 Khuudi.com</h2>
+            <h2 class="footer-logo" >@Copyright 2022 Nocommission.com</h2>
             <div class="footer-icons"  fxLayout="row" fxLayoutAlign="space-between" >
                 <h3 class="footer_icon_heading" >Keep In touch</h3>
                 <img class="footer_icon_image" src="../../assets/img/facebook.png" alt="">
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div fxLayout="row" fxFlex="100" >
-            Khuudi's aim is to connect the genuine Property  owners with genuine buyers without any third party <br>
+            Nocommission's aim is to connect the genuine Property  owners with genuine buyers without any third party <br>
             involvement who charges healthy sum of brokerage fees and provide a very bad experience. We use technology <br>
             to overcome this problem for both buyers and sellers.
         </div>

@@ -25,7 +25,7 @@ export class RawalpindiListingComponent implements OnInit {
   constructor() { 
     this.navigation = Navigation.menu;
     this.houseCards = GULBERGHOUSECARDS;
-    this.limit = 3;
+    this.limit = 5;
 		this.oFFSet = 0;
     this.isClicked = false;
 
